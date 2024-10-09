@@ -1,10 +1,10 @@
 "use client";
 import { ClientSideSuspense, RoomProvider } from '@liveblocks/react/suspense'
-import React, { useEffect, useRef, useState } from 'react'
 import { Editor } from '@/components/editor/Editor'
 import Header from '@/components/Header'
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
 import ActiveCollaborators from './ActiveCollaborators';
+import React, { useEffect, useRef, useState } from 'react'
 import { Input } from './ui/input';
 import Image from 'next/image';
 import { updateDocument } from '@/lib/actions/room.actions';
