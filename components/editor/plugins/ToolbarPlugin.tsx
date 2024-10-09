@@ -6,7 +6,6 @@
  *
  */
 import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext';
-import { mergeRegister } from '@lexical/utils';
 import {
   $createParagraphNode,
   $isRootOrShadowRoot,
@@ -26,14 +25,13 @@ import {
   $isHeadingNode,
 } from '@lexical/rich-text';
 import { $setBlocksType } from '@lexical/selection';
-import { $findMatchingParent } from '@lexical/utils';
-import React from 'react';
-import {
+import { $findMatchingParent, mergeRegister } from '@lexical/utils';
+import React, {
   useCallback,
   useEffect,
   useRef,
   useState,
-  useSyncExternalStore,
+  useSyncExternalStore
 } from 'react';
 
 const LowPriority = 1;
